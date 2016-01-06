@@ -14,7 +14,7 @@ if ( typeof Object.create !== 'function' ) {
 		init: function (options, elem) {
 			var _options = {};
 			this.$elem = $(elem);
-			this.oldText = this.$elem.html();
+			this.oldText = this.$elem.text();
 			if (typeof options === 'string') {
 				_options.effect = options;
 			} else {
